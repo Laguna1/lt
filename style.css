@@ -258,6 +258,51 @@ header {
   }
   
   /* #endregion Navbar */
+  .o_three_images {
+    display: grid;
+    font-weight: 700;
+    grid-template-columns: minmax(0%, 70%) minmax(0%, 30%);
+    grid-template-rows: minmax(0%, 50%) minmax(0%, 50%);
+    column-gap: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 3px;
+    max-width: 100%;
+}
+ 
+  .m_three_images_one {
+  padding: 4px;
+    position: relative;
+    width: 100%;
+    height: 630px;
+    background-image: url(Assets/Assets/m_three_images\ three_im.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+ 
+ .cover_one {
+  position: absolute;
+  padding: 1em;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background-image: linear-gradient(to right bottom, rgb(247, 88, 88) 18%, transparent, rgb(10, 10, 10) 90%);
+}
+ .a_three_images_logo {
+  background-image: url(Assets/Assets/tnw.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 65%;
+  height: 36%;
+  max-height: 131px;
+  line-height: 1;
+  z-index: 10;
+}
+
   .m_latest_news_grid,
   .m_middlebox_large_flex_wrap,
   .o_latest_deals {
@@ -537,3 +582,101 @@ footer {
 
 
 /* #endregion Media Queries */
+
+/*  #region three image */
+.cover-story {
+  float: left;
+  overflow: hidden;
+  padding: 4px;
+  position: relative;
+  width: 100%;
+  height: 700px;
+}
+.cover-image {
+  background-color: #000;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 1;
+}
+.cover-image, .cover-trigger {
+  bottom: 4px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+.lazy {
+  transition: .4s ease;
+  opacity: 0;
+  will-change: opacity;
+}
+.lazy,
+.lazyLoaded {
+  opacity: 1;
+}
+
+
+.cover-trigger {
+  transition: background-color .4s ease;
+  background: rgba(0,0,0,.25) url() no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  will-change: background-color;
+  z-index: 2;
+}
+.cover {
+  color: #fff;
+}
+
+.cover-gradient {
+  background: transparent url(Assets/Assets/tnw.svg) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  bottom: 4px;
+  left: 4px;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  z-index: 4;
+  max-width: 20%;
+  height: 20%;
+  max-height: 52px;
+}
+.cover-logo {
+  background: transparent url() no-repeat;
+  background-size: contain;
+  left: 24px;
+  max-width: 20%;
+  height: 20%;
+  max-height: 52px;
+  line-height: 1;
+  top: 24px;
+  pointer-events: none;
+  text-align: right;
+}
+.cover-header {
+  bottom: 4px;
+  left: 4px;
+  padding: 14px 12px;
+  position: absolute;
+  right: 4px;
+  z-index: 3;
+}
+
+.cover h5 {
+font-family: Shentox,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #fff;
+}
+.cover h2 {
+  margin-bottom: .25em;
+  font-size: 56px;
+  line-height: 1;
+}
+/* #endregion three image */
