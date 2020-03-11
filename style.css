@@ -178,7 +178,7 @@ header {
     height: 52px;
   }
   
-  .logo_tablet > img {
+  .logo_tablet img {
     height: 77px;
     width: 120px;
   }
@@ -190,7 +190,7 @@ header {
     left: 0;
   }
   
-  .logo_mobile > img {
+  .logo_mobile img {
     width: 63px;
     height: 37px;
   }
@@ -218,7 +218,7 @@ header {
   }
   
   .black_center {
-    width: 125px;
+    width: 250px;;
   }
   
   .black_right {
@@ -231,9 +231,10 @@ header {
     align-items: center;
   }
   
-  .black_left > a,
-  .black_right > a {
+  .black_left a,
+  .black_right a {
     color: white;
+    margin-left: 20px;
   }
   
   .white {
@@ -244,6 +245,10 @@ header {
     align-items: center;
     height: 48px;
     font-size: 16px;
+  }
+
+  .white a {
+    margin-left: -16px;
   }
   
   .awb {
